@@ -8,8 +8,31 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-119145034-2');
+
+$(document).ready(function(){
+  var rotation = 0, 
+    scrollLoc = $(document).scrollTop();
+  $(window).scroll(function() {
+    var newLoc = $(document).scrollTop();
+    var diff = newLoc -  scrollLoc;
+    rotation += diff, scrollLoc = newLoc;
+    var rotationStr = "rotate(" + rotation + "deg)";
+    $("#logo").css({
+      "-webkit-transform": rotationStr,
+      "-moz-transform": rotationStr,
+      "transform": rotationStr
+    });
+  });
+});
+
+$(document).ready(function(){
+   	$("#button").click(function(){
+        $("#contact").animate({
+            height: 'toggle'
+        });
+    });
+});
 </script>
 
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -17,11 +40,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Tinos&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    </head>
-<body id="csn_bod">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   </head>
 
+<body id="csn_bod">
 	<!--TOP IDENTICAL FOR ALL PAGES -->
 	<div class = "wrap_top" id="viz">
 		<div class="top">
@@ -75,7 +97,6 @@
 			</ul>
 		</div>
 	</div>	
-
 
 <!--CONTENT START CSN-->	
 
@@ -175,7 +196,7 @@
 
 	<div class ="bottom">
 		<a href="#top"> Top </a>  /	<a href="index.html"> Home </a> 
-		<p> Copyright Lilia Amundsen 2018 (c) </p>
+		<p> Copyright Lilia Amundsen (c) </p>
 	</div>
 
 

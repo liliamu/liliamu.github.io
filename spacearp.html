@@ -4,12 +4,37 @@
    <title>liliamu</title>
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119145034-2"></script>
+
 <script>
+//bc g-h script goes in here (because i had to, not because i wanted to)
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-119145034-2');
+
+  $(document).ready(function(){
+  var rotation = 0, 
+    scrollLoc = $(document).scrollTop();
+  $(window).scroll(function() {
+    var newLoc = $(document).scrollTop();
+    var diff = newLoc -  scrollLoc;
+    rotation += diff, scrollLoc = newLoc;
+    var rotationStr = "rotate(" + rotation + "deg)";
+    $("#logo").css({
+      "-webkit-transform": rotationStr,
+      "-moz-transform": rotationStr,
+      "transform": rotationStr
+    });
+  });
+});
+
+$(document).ready(function(){
+   	$("#button").click(function(){
+        $("#contact").animate({
+            height: 'toggle'
+        });
+    });
+});
 </script>
 
 
@@ -18,8 +43,7 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://raw.githubusercontent.com/liliamu/liliamu.github.io/master/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body id="sp_body">
@@ -128,11 +152,8 @@ Space Arp, a collision of senses - is an audiovisual installation that seeks to 
 
 <div class ="bottom">
 	<a href="#top"> Top </a>  /	<a href="index.html"> Home </a> 
-	<p> Copyright Lilia Amundsen 2018 (c) </p>
+	<p> Copyright Lilia Amundsen (c) </p>
 </div>
-
-
-
 </body>
 
 <!--CONTENT END FOOTER IDENTICAL FOR ALL-->
