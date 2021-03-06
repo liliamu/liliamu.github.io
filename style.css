@@ -1,5 +1,5 @@
 body {
-background-color:#696969;   
+background-color:#FFD700;   
 height:100%;
 }
 
@@ -64,7 +64,7 @@ ul{
 
 .nav-header:hover, #header:hover {
 	color: navy;
-	opacity: 0.8;
+	opacity: 1;
 	font-style: italic;
 }
 
@@ -198,19 +198,19 @@ padding-top: 10px;
 }
 
 
-/*/  dottet egde border  /*/ 
+/*/  dottet egde border  
 
 .border {
 	position:relative;
-}
+
 
 .border:before, .border:after, .border>:first-child:before, 
 .border>:first-child:after {
  position:absolute;
  width:80px; height: 80px;
  content: ' ';
- border-color:navy; /* or whatever colour */
- border-style:dotted; /* or whatever style */
+ border-color:navy;
+ border-style:dotted; 
   opacity: 0.7;
 }
 .border:before {top:0;left:0;border-width: 1px 0 0 1px}
@@ -218,6 +218,7 @@ padding-top: 10px;
 .border>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0}
 .border>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px}
 
+}/*/ 
 
 
 /* animate text color backround on hover for all*/
@@ -243,21 +244,19 @@ padding-top: 10px;
 
 
 /* animated text color backround on hover individual sections */
+/* color should be same as backround */
 
 #visuals:hover p,#visuals:active p {
-	background-image: linear-gradient(to left, #dddada 50%, red 50%);
+	background-image: linear-gradient(to left, #FFD700 50%, red 50%);
 }
 
 #CSN:hover p, #CSN:active p{
-	background-image: linear-gradient(to left, #dddada 50%, #000 50%);
+	background-image: linear-gradient(to left, #FFD700 50%, #000 50%);
 }
 
 #SP:hover p{
-	background-image: linear-gradient(to left, #dddada 50%, navy 50%);
+	background-image: linear-gradient(to left, #FFD700 50%, navy 50%);
 }
-
-
-
 
 
 /* animate text color backround on hover MENU all*/
@@ -277,7 +276,7 @@ padding-top: 10px;
   -moz-transition: all 0.20s ease-in;
   transition: all 0.20s ease-in;
   background-position: bottom left;
-  color: #FFB6C1; 
+  color: #ff9ea9; 
 }
 
 /* CSN */
