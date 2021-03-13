@@ -1,5 +1,6 @@
 body {
-background-color:#FFD700;   
+background-color: #FEE140;
+background-image: linear-gradient(180deg, #FEE140 0%, #FA709A 100%);
 height:100%;
 }
 
@@ -8,6 +9,7 @@ background-color: black;
 -webkit-font-smoothing: antialiased;
 -moz-font-smoothing: antialiased;
 -o-font-smoothing: antialiased;
+background-image: none;
 }
 
 a:visited {
@@ -71,8 +73,8 @@ ul{
 #viz #header,#viz #header a, #viz .nav-header, #viz .nav-header a, 
 #viz .nav-header a:visited, #viz #header a:visited,
 #viz .nav-header:hover, #viz #header:hover   {
-	color: navy;
-}
+	color: #dddada;
+	}
 
 #logo{
  width: 140px;
@@ -167,16 +169,14 @@ padding-top: 10px;
 	float: right;
 }	
 
-
 #CSN{
-	padding:30px 140px 50px 100px;
+	padding:20px 100px 50px 50px;
 }
 
 #csnfront,#safront,#visfront{
 	width: 500px;
 	height: auto;
 }
-
 
 #visuals,#SP{
 	padding: 30px 50px 140px 50px;
@@ -247,15 +247,15 @@ padding-top: 10px;
 /* color should be same as backround */
 
 #visuals:hover p,#visuals:active p {
-	background-image: linear-gradient(to left, #FFD700 50%, navy 50%);
+	background-image: linear-gradient(to left, #FCBD5B 50% , red 50%);
 }
 
 #CSN:hover p, #CSN:active p{
-	background-image: linear-gradient(to left, #FFD700 50%, #000 50%);
+	background-image: linear-gradient(to left, #FBA76D 50% , black 50%);
 }
 
 #SP:hover p{
-	background-image: linear-gradient(to left, #FFD700 50%, navy 50%);
+	background-image: linear-gradient(to left,   #FA8A84 50%, navy 50%);
 }
 
 
@@ -406,8 +406,6 @@ font-size: 14px;
 	position: relative;
 }
 
-
-
 #pano{
 	width: 1600px;
 	margin-right: auto;
@@ -485,7 +483,6 @@ color: white;
 	position: relative;
 }
 
-
 #arp_img1:hover{
 	opacity: 1.0;
 }
@@ -495,6 +492,7 @@ p.divider {
   flex-direction: row;
   align-items: center;
 }
+
 p.divider * {
   flex-shrink: 0;
 }
@@ -528,13 +526,16 @@ body #visu{
 #bboy,#bboy_click{
 	width: 550px;
 	cursor: pointer;
+	display: block;
+
 }
 
 #clickme{
-	float: right;
+	float: left;
 	display: inline;
-	margin-right: 450px;
+	margin-left: 100px;
 	padding-top: 100px;
+    padding-bottom: 100px;
 	font-size: 22pt; 
 	font-family: 'Work Sans', serif;
 	font-style: italic;
@@ -566,13 +567,16 @@ body #visu{
 
 .title_text{ 
 	font-size: 14pt; 
-	opacity: 0.8; 
-	font-weight: bold;
+	opacity: 0.8;
 }
 
 .description {
 	font-size: 11pt; 
 	opacity: 0.8; 
+}
+
+#vin{ 
+display: inline;
 }
 
 
