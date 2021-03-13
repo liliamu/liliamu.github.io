@@ -4,7 +4,7 @@ height:100%;
 }
 
 #bod_vis,#csn_bod,#sp_body{
-background-color: black;
+background-color: red;
 -webkit-font-smoothing: antialiased;
 -moz-font-smoothing: antialiased;
 -o-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ ul{
 /* header */ 
 
 #header, .nav-header{
-	color: navy;
+	color: red;
 	opacity: 0.85;
 	font-size: 20pt;
 	letter-spacing: 2px;
@@ -53,17 +53,17 @@ ul{
 }
 
 .nav-header a, #header a  {
-	color: navy;
-	opacity: 0.8;
+	color: red;
+	opacity: 1;
 }
 
 .nav-header a:visited, #header a:visited {
-	color: navy;
-	opacity: 0.8;
+	color: red;
+	opacity: 1;
 }
 
 .nav-header:hover, #header:hover {
-	color: navy;
+	color: red;
 	opacity: 1;
 	font-style: italic;
 }
@@ -71,7 +71,7 @@ ul{
 #viz #header,#viz #header a, #viz .nav-header, #viz .nav-header a, 
 #viz .nav-header a:visited, #viz #header a:visited,
 #viz .nav-header:hover, #viz #header:hover   {
-	color: #dddada;
+	color: red;
 }
 
 #logo{
@@ -100,7 +100,7 @@ padding-top: 10px;
 	font-family: 'Work Sans', sans-serif;
 	font-style: italic;
 	font-size: 12pt;
-	color: navy;
+	color: red;
 	letter-spacing: 1.5px;
 	padding-top: 40px;
 	padding-right: 100px;
@@ -516,7 +516,7 @@ p.divider span.divider {
 /* VISUALS */
 
 body #visu{
-	background-color: black;
+	background-color: red;
 }
 
 #dau1{
