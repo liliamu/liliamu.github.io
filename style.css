@@ -4,7 +4,7 @@ height:100%;
 }
 
 #bod_vis,#csn_bod,#sp_body{
-background-color: red;
+background-color: navy;
 -webkit-font-smoothing: antialiased;
 -moz-font-smoothing: antialiased;
 -o-font-smoothing: antialiased;
@@ -43,7 +43,7 @@ ul{
 /* header */ 
 
 #header, .nav-header{
-	color: red;
+	color: navy;
 	opacity: 0.85;
 	font-size: 20pt;
 	letter-spacing: 2px;
@@ -53,17 +53,17 @@ ul{
 }
 
 .nav-header a, #header a  {
-	color: red;
+	color: navy;
 	opacity: 1;
 }
 
 .nav-header a:visited, #header a:visited {
-	color: red;
+	color: navy;
 	opacity: 1;
 }
 
 .nav-header:hover, #header:hover {
-	color: red;
+	color: navy;
 	opacity: 1;
 	font-style: italic;
 }
@@ -71,7 +71,7 @@ ul{
 #viz #header,#viz #header a, #viz .nav-header, #viz .nav-header a, 
 #viz .nav-header a:visited, #viz #header a:visited,
 #viz .nav-header:hover, #viz #header:hover   {
-	color: red;
+	color: navy;
 }
 
 #logo{
@@ -100,7 +100,7 @@ padding-top: 10px;
 	font-family: 'Work Sans', sans-serif;
 	font-style: italic;
 	font-size: 12pt;
-	color: red;
+	color: navy;
 	letter-spacing: 1.5px;
 	padding-top: 40px;
 	padding-right: 100px;
@@ -247,7 +247,7 @@ padding-top: 10px;
 /* color should be same as backround */
 
 #visuals:hover p,#visuals:active p {
-	background-image: linear-gradient(to left, #FFD700 50%, red 50%);
+	background-image: linear-gradient(to left, #FFD700 50%, navy 50%);
 }
 
 #CSN:hover p, #CSN:active p{
@@ -516,7 +516,7 @@ p.divider span.divider {
 /* VISUALS */
 
 body #visu{
-	background-color: red;
+	background-color: navy;
 }
 
 #dau1{
