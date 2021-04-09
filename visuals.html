@@ -10,7 +10,8 @@
   gtag('js', new Date());
   gtag('config', 'UA-119145034-2');
 
-//script1.js
+//script1.js - has to be here for gitsite (??)
+//rotate logo on scroll 
 $(function() {
   var rotation = 0, 
     scrollLoc = $(document).scrollTop();
@@ -27,6 +28,7 @@ $(function() {
   });
 });
 
+//popout contact details
 $(document).ready(function(){
    	$("#button").click(function(){
         $("#contact").animate({
@@ -35,6 +37,7 @@ $(document).ready(function(){
     });
 });
 
+//show/hide img on click - DJesus
 $(document).ready(function(){
 	$('#bboy').hide();
 	$('#bboy_click,#bboy').on('click',function(){
@@ -43,9 +46,10 @@ $(document).ready(function(){
 });
 </script>
 
+
 <script type="text/javascript">
 //p5js_script.js
-// Sketch One
+// Sketch One - mountain 
 var c1 = function(s){
 s.t;
 s.i;
@@ -67,7 +71,7 @@ s.draw = function() {
   s.beginShape();
   for (s.i = 0; s.i < s.random(10,700); s.i++) {
     s.ang = s.map(s.i, 0, 100, 0.5, s.TWO_PI);
-    s.rad = 600 * s.noise(s.i * 0.07, s.t * 0.008);
+    s.rad = 600 * s.noise(s.i * 0.1, s.t * 0.1);
     s.x = s.rad * s.sin(s.ang)-3.5;
     s.y = s.rad * 0.6;
     s.curveVertex(s.x, s.y);
@@ -79,7 +83,7 @@ s.draw = function() {
  // reset after 1k frames 
  // idea for later: change color 
 
-  if (s.frameCount %1000 == 0) {
+  if (s.frameCount %500 == 0) {
   s.background("black");
   s.stroke(255, 20);
 }  
@@ -88,7 +92,7 @@ s.draw = function() {
 
 var myp5 = new p5(c1, "c1");
 
-// Sketch Two
+// Sketch Two - tree rings 
 var c2 = function(p) { 
 
 p.nVal; // noise value
@@ -229,7 +233,7 @@ myp5 = new p5(c2, "c2");
 				<div class="description"> 
 					<p> 
  						Creative coding, generative works 
-						<br>Draws out shapes resembling a mountain range, using the p5js random and noise functions. <br> Generates new pattern after 1000 frames.  </p>	
+						<br>Draws out shapes resembling a mountain range, using the p5js random and noise functions. <br> Generates new pattern after 500 frames.  </p>	
 				</div>
 			</div>
 		</li>
@@ -254,23 +258,19 @@ myp5 = new p5(c2, "c2");
 		</div> 
 	</li>
 
-
-
 	<li class ="vis">
 		 <div class ="content_right">
 			<img src="visuals/bboy.jpg" id="bboy" alt="jesus as a dj collage"> 
 			<img src="visuals/bboy_click.jpg" id="bboy_click" alt="jesus as a dj two"> 
-			 <p id="clickme">  CLICK ME (a lot) ---></p>
 			 <p id="clickme2"> ^CLICK ME (a lot)</p>
-			 <p class="title_text" id="vin"> Vinyls(p)inner </p> 
-				<div class="description" id="vin"> 
-					<p> Digital Collages
-					<br> Interactive still
-					</p>
+			 <p class="title_text"> Vinyls(p)inner </p> 
+				<div class="description" > 
+					<p> Digital Collages </p>
+					<br> Interactive still </p>
 				</div>
+					<br><p id="vin">  CLICK ME (a lot) ---> </p>
 		</div>
 	</li>
-
 	
 	<li class ="vis">
 			<div class="visuals">
@@ -284,7 +284,6 @@ myp5 = new p5(c2, "c2");
 			</div>
 		</div> 
 	</li>
-
 
 	<li class ="vis"> 
 		<div class ="content_right">

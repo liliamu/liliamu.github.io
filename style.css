@@ -527,6 +527,7 @@ body #visu{
 	width: 550px;
 	cursor: pointer;
 	display: block;
+	padding-bottom: 100px;
 
 }
 
@@ -550,7 +551,7 @@ body #visu{
 }
 
 #dunes{
-	width: 700px;
+	width: 800px;
 }
 
 #dunes:hover, #dau1:hover{
@@ -573,10 +574,11 @@ body #visu{
 .description {
 	font-size: 11pt; 
 	opacity: 0.8; 
+	display: inline;
 }
 
 #vin{ 
-display: inline;
+font-size: 15pt;
 }
 
 
