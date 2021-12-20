@@ -4,36 +4,7 @@
    <title>liliamu</title>
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119145034-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-119145034-2');
-  	$(document).ready(function(){
-  var rotation = 0, 
-    scrollLoc = $(document).scrollTop();
-  $(window).scroll(function() {
-    var newLoc = $(document).scrollTop();
-    var diff = newLoc -  scrollLoc;
-    rotation += diff, scrollLoc = newLoc;
-    var rotationStr = "rotate(" + rotation + "deg)";
-    $("#logo").css({
-      "-webkit-transform": rotationStr,
-      "-moz-transform": rotationStr,
-      "transform": rotationStr
-    });
-  });
-});
-
-$(document).ready(function(){
-   	$("#button").click(function(){
-        $("#contact").animate({
-            height: 'toggle'
-        });
-    });
-}); 
-</script>
+	<link href="script.js" type="text/javascript"></link>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1f">
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -41,9 +12,7 @@ $(document).ready(function(){
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" 
 	type="text/javascript"> </script>
-	<script src="script.js" type="text/javascript"></script>
-
-
+	<script src="script.js" type="text/javascript"> </script>
 </head>
 
 <body>
@@ -53,7 +22,6 @@ $(document).ready(function(){
 			<h5>
 				<a href="index.html" id="header"> LILIA  K.  AMUNDSEN </a>
 			</h5>
-
 			<div id="contact"> 
 				<ul>
 					<li> 
@@ -61,12 +29,12 @@ $(document).ready(function(){
 					</li>
 					<li> 
 						<p>  
-						<a href= "mailto:lilia.amundsen@gmail.com">
-							lilia.amundsen@gmail.com </a> 
+						<a href= "mailto:liliakarimova@protonmail.com">
+							email me </a> 
 						</p> 
 					</li>
 					<li> 
-						<p> +47 905 28 506 </p> 
+						<p> text me: +47 905 28 506 </p> 
 					</li>
 					<li>
 						<p>  

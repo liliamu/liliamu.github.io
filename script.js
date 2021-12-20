@@ -1,4 +1,9 @@
-$(document).ready(function(){
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119145034-2');
+    $(document).ready(function(){
   var rotation = 0, 
     scrollLoc = $(document).scrollTop();
   $(window).scroll(function() {
@@ -15,9 +20,16 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-   	$("#button").click(function(){
+    $("#button").click(function(){
         $("#contact").animate({
             height: 'toggle'
         });
     });
+}); 
+
+$(document).ready(function(){
+  $('#bboy').hide();
+  $('#bboy_click,#bboy').on('click',function(){
+    $('#bboy_click,#bboy').toggle()
+  });
 });
