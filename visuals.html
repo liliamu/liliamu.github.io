@@ -16,92 +16,29 @@
     <link href="p5js_script.js" type="text/javascript"></link>
     <script src="p5js_script.js" type="text/javascript"></script>
 	<script src="script.js" type="text/javascript"> </script>
+	<script src="components/header.js" type="text/javascript" defer></script>
+	<script src="components/footer.js" type="text/javascript" defer></script>
+
 </head>
-
 <body id="bod_vis">
- <!--TOP IDENTICAL FOR ALL PAGES -->
-	<div class = "wrap_top" id="viz">
-		<div class="top">
-			<h5>
-				<a href="index.html" id="header"> LILIA  K.  AMUNDSEN </a>
-			</h5>
-
-			<div id="contact"> 
-				<ul>
-					<li> 
-						<p> computation + creativity </p> 
-					</li>
-					<li> 
-						<p>  
-						<a href= "mailto:liliakarimova@protonmail.com">
-							email me </a> 
-						</p> 
-					</li>
-					<li> 
-						<p> text me: +47 905 28 506  </p> 
-					</li>
-					<li>
-						<p>  
-							<a href= "http://vsco.co/liliaamu" target="_blank">
-								photogrid </a> /
-							
-						<a href= "https://www.linkedin.com/in/liliamu/" target="_blank"> 
-							CV </a> 
-						</p>
-					</li>
-				</ul>
-			</div>
-
-			<div id="logodiv">
-				<a href="index.html">
-					<img src="logogrey.png" id="logo" alt="logo liliamu">
-				</a>
-			</div>
-		</div>
-
-		<div class="menudiv">
-			<ul class="menu">
-				<li class="nav-header">
-					<a href ="index.html#top_work"> 
-						<h5 id="work"> WORK </h5> 
-					</a> 
-				</li>
-				<li class="nav-header"> 
-					<h5 id ="button"> CONTACT </h5> 
-				</li>
-			</ul>
-		</div>
-	</div>	
-
+<header-component id="headerstyle"> </header-component>
 <!--CONTENT START VISUALS -->
-
 <ul class="content">
 	<li class ="content_left">
-		 <div id= "top_work">
-			
- 			
- 				<div id="c1"> </div>
- 			 
-					 <p class="title_text"> Mountain Flow </p> 
-			
+		<div id= "top_work">
+ 			<div id="c1"> </div>		 
+				<p class="title_text"> Mountain Flow </p> 		
 				<div class="description"> 
 					<p> 
  						Creative coding, generative works 
 						<br>Draws out shapes resembling a mountain range, using the p5js random and noise functions. <br> Generates new pattern after 500 frames.  </p>	
-				</div>
 			</div>
-		</li>
-
-
-
-
+		</div>
+	</li>
 	<li class ="content_right">
-		<div id="treerings">
-					
+		<div id="treerings">		
 			<div id="c2"> </div>
-			
 				<p class="title_text">  Tree waves </p> 
-
 			<div class="description"> 
 				 <p>  
 				 	Creative coding, generative works 
@@ -111,7 +48,6 @@
 			</div>
 		</div> 
 	</li>
-
 	<li class ="vis">
 		 <div class ="content_right">
 			<img src="visuals/bboy.jpg" id="bboy" alt="jesus as a dj collage"> 
@@ -125,11 +61,10 @@
 					<br><p id="vin">  CLICK ME (a lot) ---> </p>
 		</div>
 	</li>
-	
 	<li class ="vis">
-			<div class="visuals">
-		 		<img src="visuals/dunes.png" id = "dunes" alt="colalges of dunes in iceland"> 
-				<p class="title_text">  Geothermal Dunes </p> 
+		<div class="visuals">
+		 	<img src="visuals/dunes.png" id = "dunes" alt="colalges of dunes in iceland"> 
+			<p class="title_text">  Geothermal Dunes </p> 
 			<div class="description">
 				 <p>  
 				 	Digital Collages, Mirroring inversion 
@@ -138,45 +73,32 @@
 			</div>
 		</div> 
 	</li>
-
 	<li class ="vis"> 
 		<div class ="content_right">
-				<img src="visuals/dau1.png" id = "dau1" alt="collage sculpture and sand dunes"> 
+			<img src="visuals/dau1.png" id = "dau1" alt="collage sculpture and sand dunes"> 
 			<p class="title_text"> Death becomes her </p>
-		<div class="description"> 
-			<p> 
+			<div class="description"> 
+				<p> 
 				Digital Collages, inversion 
-			<br> A take on Death and the maiden motif: 
-			<br> Elna Borch, "Døden og unge pige" + Aerial shot of the Namib Desert by the Kompsat-2 satellite.   
-			</p> 
-		</div>
+				<br> A take on Death and the maiden motif: 
+				<br> Elna Borch, "Døden og unge pige" + Aerial shot of the Namib Desert by the Kompsat-2 satellite.   
+				</p> 
+			</div>
 		</div>
 	</li>
-
 	<li class ="vis">
-		 <div id= "superspace_div" class ="visuals">
-		<a href= "https://www.youtube.com/watch?v=XQWJjGgeGq8" target="_blank"> 
-			<img src="visuals/sp.gif" id="superspace" alt="gif of kaja haven superspace"> </a>
-					<p class="title_text"> Superspace - Lost 5 </p> 
-					<div class="description"> 
-					<p> 
-						Music video, 2016 
-						<br> Art direction / Filming  by Lilia Amundsen 
-						<br> Music written & produced by Superspace </a>
-						<br> <a href="https://kajahaven.com/" target="_blank"> Editing by Kaja Haven </a> </p>
+		<div id= "superspace_div" class ="visuals">
+			<a href= "https://www.youtube.com/watch?v=XQWJjGgeGq8" target="_blank"> 
+				<img src="visuals/sp.gif" id="superspace" alt="gif of kaja haven superspace"> </a>
+				<p class="title_text"> Superspace - Lost 5 </p> 
+				<div class="description"> 
+					<p> Music video, 2016 
+					<br> Art direction / Filming  by Lilia Amundsen 
+					<br> Music written & produced by Superspace 
+					<br> <a href="https://kajahaven.com/" target="_blank"> Editing by Kaja Haven </a> </p>
 				</div>
-			</div>
-		</li>
+		</div>
+	</li>
 </ul>
-
-
-<!--CONTENT END FOOTER IDENTICAL FOR ALL-->
-		
-<div class ="bottom">
-	<a href="#top"> Top </a>  /	<a href="index.html"> Home </a> 
-	<p> Copyright Lilia Amundsen (c) </p>
-</div>
-
-
-
+<footer-component> </footer-component>
 </body>

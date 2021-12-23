@@ -25,7 +25,7 @@ ul{
  }
 
 
-.wrap_top {
+#header {
 	margin-left: 80px;
 	margin-right: 80px;
 }
@@ -44,7 +44,7 @@ ul{
 
 /* header */ 
 
-#header, .nav-header{
+#headertext, .nav-header{
 	color: navy;
 	opacity: 0.85;
 	font-size: 20pt;
@@ -54,25 +54,25 @@ ul{
  	font-family: 'Work Sans', sans-serif;
 }
 
-.nav-header a, #header a  {
+.nav-header a, #headertext a  {
 	color: navy;
 	opacity: 1;
 }
 
-.nav-header a:visited, #header a:visited {
+.nav-header a:visited, #headertext a:visited {
 	color: navy;
 	opacity: 1;
 }
 
-.nav-header:hover, #header:hover {
+.nav-header:hover, #headertext:hover {
 	color: navy;
 	opacity: 1;
 	font-style: italic;
 }
 
-#viz #header,#viz #header a, #viz .nav-header, #viz .nav-header a, 
-#viz .nav-header a:visited, #viz #header a:visited,
-#viz .nav-header:hover, #viz #header:hover   {
+#headerstyle #headertext,#headerstyle #headertext a, #headerstyle .nav-header, #headerstyle .nav-header a, 
+#headerstyle .nav-header a:visited, #headerstyle #headertext a:visited,
+#headerstyle .nav-header:hover, #headerstyle #headertext:hover {
 	color: #dddada;
 	}
 
@@ -94,7 +94,6 @@ margin-left: 100px;
 padding-top: 10px;
 }
 
-
 /*slide in contact info*/ 
 
 #contact{
@@ -113,11 +112,11 @@ padding-top: 10px;
 	display: none;
 }
 
-#viz #contact,#viz #contact a, #viz #contact a:visited{
+#headerstyle #contact,#headerstyle #contact a, #headerstyle #contact a:visited{
  color: #dddada; 
 }
 
-#viz #contact a:hover{
+#headerstyle #contact a:hover{
 	color: #FFB6C1; 
 }
 
@@ -261,7 +260,7 @@ padding-top: 10px;
 
 /* animate text color backround on hover MENU all*/
 
- .nav-header h5, #header {
+ .nav-header h5, #headertext {
   background-size: 200% 55%;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -270,7 +269,7 @@ padding-top: 10px;
   transition: all 0.20s ease-in;
 }
 
- .nav-header h5:hover, #header:hover{
+ .nav-header h5:hover, #headertext:hover{
    background-image: linear-gradient(to left, pink 50%, white 50%);
   -webkit-transition: all 0.20s ease-in;
   -moz-transition: all 0.20s ease-in;
@@ -633,7 +632,7 @@ font-size: 15pt;
 	margin-bottom: 20px;
 }
 
-#header, #work, #button{
+#headertext, #work, #button{
 	font-size: 20px;
 }
 
@@ -665,13 +664,13 @@ font-size: 15pt;
  	display: inline-block;
 }
 
-.wrap_top a {
+#header a {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 
-#header{
+#headertext{
 	display: block;
 }
 
@@ -712,7 +711,7 @@ padding: 0px 0px 0px 0px;
 	padding: 0px 0px 50px 0px;
 }
 
-.wrap_top {
+#header {
 	margin-left:10px;
 	margin-right: 10px;
 }
@@ -854,43 +853,43 @@ line-height: 20px;
 
 @media screen and (orientation: landscape) and (max-width:1200px) {
 
-.menu li {
-margin-left: 100px;
-padding-top: 30px;
+	.menu li {
+	margin-left: 100px;
+	padding-top: 30px;
 
-}
+	}
 
-#contact{
-	text-align: left;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-bottom: 0px;
-	line-height: 10px;
-	float: right;
-}
+	#contact{
+		text-align: left;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-left: 0px;
+		padding-bottom: 0px;
+		line-height: 10px;
+		float: right;
+	}
 
-#logo{
-	margin-top: 20px;
-	width: 70px;
-	margin-left: auto;
- 	margin-right: auto;
- 	display: inline-block;
- 	position: relative;
-}
+	#logo{
+		margin-top: 20px;
+		width: 70px;
+		margin-left: auto;
+	 	margin-right: auto;
+	 	display: inline-block;
+	 	position: relative;
+	}
 
-#logodiv{
-	margin-right: 300px;
-	margin-left: 300px;
-}
+	#logodiv{
+		margin-right: 300px;
+		margin-left: 300px;
+	}
 
-#c1{
-	zoom: 60%;
-}
+	#c1{
+		zoom: 60%;
+	}
 
-#c2{
-	zoom: 70%;
-}
+	#c2{
+		zoom: 70%;
+	}
 
 }
 
