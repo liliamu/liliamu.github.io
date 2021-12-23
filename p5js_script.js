@@ -1,4 +1,4 @@
-// Sketch One
+// Mountain
 var c1 = function(s){
 s.t;
 s.i;
@@ -22,17 +22,17 @@ s.draw = function() {
     s.ang = s.map(s.i, 0, 100, 0.5, s.TWO_PI);
     s.rad = 600 * s.noise(s.i * 0.07, s.t * 0.008);
     s.x = s.rad * s.sin(s.ang)-3.5;
-    s.y = s.rad * 0.6;
+    s.y = s.rad * 0.5;
     s.curveVertex(s.x, s.y);
   }
   s.endShape(s.CLOSE);
 
   s.t += 0.3; //time
 
- // reset after 1k frames 
+ // reset after 500 frames 
  // idea for later: change color 
 
-  if (s.frameCount %1000 == 0) {
+  if (s.frameCount %500 == 0) {
   s.background("black");
   s.stroke(255, 20);
 }  
@@ -43,16 +43,14 @@ var myp5 = new p5(c1, "c1");
 
 
 
-
-
-// Sketch Two
+// Waves
 var c2 = function(p) { 
 
 p.nVal; // noise value
 p.nInt // noise intensity
 p.nAmp  // noise amplitude
-p.resolution = 500; // how many points in the circle
-p.rad = 150;
+p.resolution = 250; // how many points in the circle
+p.rad = 30;
 p.x;
 p.y;
 p.u;
@@ -60,7 +58,7 @@ p.a;
 p.i;
 
 p.t = 0; // time passed
-p.tChange = 0.0010; // how quick time flies
+p.tChange = 0.0030; // how quick time flies
 
 p.setup = function() {
   p.createCanvas(750, 500 );
@@ -94,8 +92,8 @@ p.draw = function(){
   p.t = p.t + p.tChange;
   p.u=0.04;
 
-for (p.i=0; p.i <= 70; p.i+=1) {
-  p.u +=0.035;
+for (p.i=0; p.i <= 40; p.i+=1) {
+  p.u +=0.05;
   p.drawRings(p.u);
 };
 };
