@@ -622,232 +622,232 @@ font-size: 15pt;
 
 @media screen and (min-width:320px) and (max-width:1200px) {
 
-#visfront,#safront,#csnfront {
-	width:100%
-}
+	#visfront,#safront,#csnfront {
+		width:100%
+	}
 
-#contact{
-	padding: 0px;
-	text-align: left;
-	margin-bottom: 20px;
-}
+	#contact{
+		padding: 0px;
+		text-align: left;
+		margin-bottom: 20px;
+	}
 
-#headertext, #work, #button{
-	font-size: 20px;
-}
+	#headertext, #work, #button{
+		font-size: 20px;
+	}
 
-#logo{
-	margin-top: 50px;
-	width: 70px;
-	margin-left: auto;
- 	margin-right: auto;
- 	display: block;
+	#logo{
+		margin-top: 50px;
+		width: 70px;
+		margin-left: auto;
+	 	margin-right: auto;
+	 	display: block;
 
-}
+	}
 
-#logodiv{
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
+	#logodiv{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-.menu li{
-	position: relative;
-	margin-left: auto;
- 	margin-right: auto;
- 	margin-top: 20px;
- 	padding-left: 30px;
-}
+	.menu li{
+		position: relative;
+		margin-left: auto;
+	 	margin-right: auto;
+	 	margin-top: 20px;
+	 	padding-left: 30px;
+	}
 
-.menu {
- 	display: inline-block;
-}
+	.menu {
+	 	display: inline-block;
+	}
 
-#header a {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
+	#header a {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 
-#headertext{
-	display: block;
-}
+	#headertext{
+		display: block;
+	}
 
-.top {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
+	.top {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 
-.content_left,.content_right{
-padding: 0px 0px 0px 0px;
-}
+	.content_left,.content_right{
+	padding: 0px 0px 0px 0px;
+	}
 
-.content_left img,.content_right img{
-	position: relative;
-	float: left;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 10px;
-}	
+	.content_left img,.content_right img{
+		position: relative;
+		float: left;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 10px;
+	}	
 
-.content_left p,.content_right p{
-	text-align: left;
-}
+	.content_left p,.content_right p{
+		text-align: left;
+	}
 
-.border {
-	display: block;
-}
-
-
-.border:before, .border:after, .border>:first-child:before, 
-.border>:first-child:after {
- border-style:none; /* or whatever style */
-}
+	.border {
+		display: block;
+	}
 
 
-#CSN,#visuals,#SP{
-	padding: 0px 0px 50px 0px;
-}
+	.border:before, .border:after, .border>:first-child:before, 
+	.border>:first-child:after {
+	 border-style:none; 
+	}
 
-#header {
-	margin-left:10px;
-	margin-right: 10px;
-}
 
-.top h5  {
-	padding-top: 10px;
-	padding-right: 10px;
-	word-spacing: 5px;
-	text-align: left;
-}
+	#CSN,#visuals,#SP{
+		padding: 0px 0px 50px 0px;
+	}
 
-.content,.csn_content,.SP{
-	padding: 20px;
-}
+	#header {
+		margin-left:10px;
+		margin-right: 10px;
+	}
 
-#contact{
-	text-align: left;
-	padding-top: 0px;
-	padding-right: 0px;
+	.top h5  {
+		padding-top: 10px;
+		padding-right: 10px;
+		word-spacing: 5px;
+		text-align: left;
+	}
+
+	.content,.csn_content,.SP{
+		padding: 20px;
+	}
+
+	#contact{
+		text-align: left;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-left: 0px;
+		line-height: 10px;
+		float: left;
+	}
+
+	.arp_text{
+		margin-top: 0px;
+		padding-top: 0px;
+		float: left;
+		position: relative;
+		width: 100%
+	 }
+
+	 #vid1{
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	#arp_img1{
+		padding: 20px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.SP{
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	#csn_title,.text_csn1,.text_csn2,.text_csn3,#txxxt2{
+		padding: 0px;
+		padding-top: 30px;
+	}
+
+	#pinesimg,#barkimg,#leafimg,#lavaimg,#lavagif
+	,#pinesgif,#barkgif,#leafgif,#tunsvg,#pano,#flat,#tunbild{
+		width: 100%;
+		padding: 0px;
+		padding-top: 30px;
+		display: block;
+		position: relative;
+		float: left;
+	}
+
+	#tunsvg{
+		width: 150%;
+	}
+
+	.csn_content{
+		margin-left: 0px;
+	}
+
+	#c1{
+		zoom: 35%;
+	}
+
+	#c2{
+		zoom: 40%;
+	}
+
+	#treerings{
+		padding-top: 50px;
+	}
+
+	#dunes, #dau1,#superspace{
+		width: 100%;
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 20px;
+		display: block;
+		position: relative;
+		float: left;
+	}
+
+	#bboy_click,#bboy{
+	width: 100%;
+	}
+
+	#clickme { 
+		display: none;
+	}
+
+	#clickme2{
+		display: inline-block;
+	}
+
+	.description{
+		padding: 0px;
+	}
+
+	#bod_vis .content{
+		padding-top: 0px;
+		margin: 0px;
+	}
+
+	.vis{
+		padding-left: 0px;
+		padding-top: 10px;
+	}
+
+	.vis p{
 	padding-left: 0px;
-	line-height: 10px;
-	float: left;
-}
+	line-height: 20px;
+	}
 
-.arp_text{
-	margin-top: 0px;
-	padding-top: 0px;
-	float: left;
-	position: relative;
-	width: 100%
- }
+	#arrowside{
+		display: none;
+	}
 
- #vid1{
-	padding-top: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-#arp_img1{
-	padding: 20px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.SP{
-	padding-top: 0px;
-	margin-top: 0px;
-	padding-bottom: 0px;
-}
-
-#csn_title,.text_csn1,.text_csn2,.text_csn3,#txxxt2{
-	padding: 0px;
-	padding-top: 30px;
-}
-
-#pinesimg,#barkimg,#leafimg,#lavaimg,#lavagif
-,#pinesgif,#barkgif,#leafgif,#tunsvg,#pano,#flat,#tunbild{
-	width: 100%;
-	padding: 0px;
-	padding-top: 30px;
-	display: block;
-	position: relative;
-	float: left;
-}
-
-#tunsvg{
-	width: 150%;
-}
-
-.csn_content{
-	margin-left: 0px;
-}
-
-#c1{
-	zoom: 35%;
-}
-
-#c2{
-	zoom: 40%;
-}
-
-#treerings{
-	padding-top: 50px;
-}
-
-#dunes, #dau1,#superspace{
-	width: 100%;
-	padding: 0px;
-	padding-top: 50px;
-	padding-bottom: 20px;
-	display: block;
-	position: relative;
-	float: left;
-}
-
-#bboy_click,#bboy{
-width: 100%;
-}
-
-#clickme { 
-	display: none;
-}
-
-#clickme2{
-	display: inline-block;
-}
-
-.description{
-	padding: 0px;
-}
-
-#bod_vis .content{
-	padding-top: 0px;
-	margin: 0px;
-}
-
-.vis{
-	padding-left: 0px;
-	padding-top: 10px;
-}
-
-.vis p{
-padding-left: 0px;
-line-height: 20px;
-}
-
-#arrowside{
-	display: none;
-}
-
-#superspace_div p{
-	text-align: left;
-	padding-right: 0px;
-}
+	#superspace_div p{
+		text-align: left;
+		padding-right: 0px;
+	}
 
 }
 

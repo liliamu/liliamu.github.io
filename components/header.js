@@ -24,7 +24,7 @@ connectedCallback() {
 		<div class="menudiv">
 			<ul class="menu">
 				<li class="nav-header"> <a href ="./index.html#top_work"> <h5 id="work"> WORK </h5> </a> </li>
-				<li class="nav-header"> <h5 id ="button"> CONTACT </h5> </li>
+				<li class="nav-header"> <h5 id ="button"> ABOUT </h5> </li>
 			</ul>
 		</div>
 	</div>
