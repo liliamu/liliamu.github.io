@@ -42,7 +42,7 @@ var c2 = function (p) {
   p.rad = 50;
 
   p.t = 0; // time passed
-  p.tChange = 0.004; // how quick time flies
+  p.tChange = 0.003; // how quick time flies
 
   p.setup = function () {
     p.createCanvas(750, 500);
