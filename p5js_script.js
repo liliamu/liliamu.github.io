@@ -38,11 +38,11 @@ var myp5 = new p5(c1, "c1");
 
 // Waves
 var c2 = function (p) {
-  p.resolution = 250; // how many points in the circle
-  p.rad = 30;
+  p.resolution = 300; // how many points in the circle
+  p.rad = 50;
 
   p.t = 0; // time passed
-  p.tChange = 0.003; // how quick time flies
+  p.tChange = 0.004; // how quick time flies
 
   p.setup = function () {
     p.createCanvas(750, 500);
