@@ -902,5 +902,10 @@ font-size: 15pt;
 		zoom: 60%;
 	}
 
+	.description{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 }
 
