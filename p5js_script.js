@@ -114,17 +114,19 @@ var c3 = function (q) {
 
   //circledots
   q.dottedRing = function () {
+    q.push(); 
     q.translate(q.width / 2, q.height / 2);
     q.beginShape();
     for (q.i = 0; q.i < 150; q.i++) {
       q.theta = q.random(0, q.TWO_PI);
-      q.h = q.randomGaussian(2.9); //experiment with different means
+      q.h = q.randomGaussian(2.9);
       q.r = (q.exp(q.h) - 3) / (q.exp(q.h) + 90);
       q.x = (q.width / 1.8) * q.r * q.cos(q.theta);
       q.y = (q.height / 1.8) * q.r * q.sin(q.theta);
       q.ellipse(q.x, q.y, 0.8, 0.8);
     }
     q.endShape(q.CLOSE);
+    q.pop(); 
   };
 
   q.draw = function () {
