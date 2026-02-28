@@ -33,16 +33,16 @@ var c1 = function (s) {
   };
 };
 
-var myp5 = new p5(c1, "c1");
+var myp5_1 = new p5(c1, "c1");
 
 
 // Waves
 var c2 = function (p) {
-  p.resolution = 300; // how many points in the circle
-  p.rad = 50;
+  p.resolution = 250; // how many points in the circle
+  p.rad = 80;
 
-  p.t = 0; // time passed
-  p.tChange = 0.003; // how quick time flies
+  p.t = 0.05; // time passed
+  p.tChange = 0.0009; // how quick time flies
 
   p.setup = function () {
     p.createCanvas(750, 500);
@@ -77,18 +77,18 @@ var c2 = function (p) {
     p.translate(p.width / 2, p.height / 2);
 
     p.nInt = p.map(0, 0, p.width, 0.5, 10); // intensity
-    p.nAmp = p.map(0, 0.8, p.height, 0.007, 0.1); // amplitude
+    p.nAmp = p.map(0, 0.8, p.height, 0.007, 1); // amplitude
     p.t = p.t + p.tChange;
     p.u = 0.04;
 
-    for (p.i = 0; p.i <= 40; p.i += 1) {
-      p.u += 0.05;
+    for (p.i = 0; p.i <= 30; p.i += 1) {
+      p.u += 0.1;
       p.drawRings(p.u);
     }
   };
 };
 
-myp5 = new p5(c2, "c2");
+myp5_2 = new p5(c2, "c2");
 
 
 //DotsZima
@@ -96,7 +96,6 @@ var c3 = function (q) {
   var r = 0;
   var g = 200;
   var b = 255;
-
   q.setup = function () {
     q.createCanvas(600, 600);
     q.background("black");
@@ -114,7 +113,7 @@ var c3 = function (q) {
 
   //circledots
   q.dottedRing = function () {
-    q.push(); 
+    q.push();
     q.translate(q.width / 2, q.height / 2);
     q.beginShape();
     for (q.i = 0; q.i < 150; q.i++) {
@@ -126,23 +125,27 @@ var c3 = function (q) {
       q.ellipse(q.x, q.y, 0.8, 0.8);
     }
     q.endShape(q.CLOSE);
-    q.pop(); 
+    q.pop();
   };
 
   q.draw = function () {
     r = q.map(q.mouseX, 0, 600, 0, 255);
     g = q.map(q.mouseX, 0, 600, 0, 200);
     b = q.map(q.mouseY, 0, 600, 255, 0);
-    q.dottedRing(q.x, q.y, 1, 1);
     q.noStroke();
     q.fill(r, g, b);
+    q.dottedRing();
 
-    if (q.mouseX >= 290 && q.mouseX <= 320) {
-      q.noStroke();
+    // Check if mouse is in the center area
+    let centerX = q.width / 2;
+    let centerY = q.height / 2;
+    let distanceFromCenter = q.dist(q.mouseX, q.mouseY, centerX, centerY);
+
+    if (distanceFromCenter <= 25) {
       q.fill("#5BC2E7");
-      q.stippleRect(-75, -75, 150, 150, 1);
+      // Call stippleRect with CENTER coordinates (no translate needed)
+      q.stippleRect(centerX - 75, centerY - 75, 150, 150, 1);
     }
   };
 };
-
-var myp5 = new p5(c3, "c3");
+var myp5_3 = new p5(c3, "c3");
