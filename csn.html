@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>liliamu</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119145034-2"></script>
+    <title>Computer Sees Nature - liliamu</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119145034-2"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Tinos&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tinos&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="script.js" type="text/javascript"> </script>
-	<script src="components/header.js" type="text/javascript" defer></script>
-	<script src="components/footer.js" type="text/javascript" defer></script>
-   </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+</head>
 <body id="csn_bod">
-<header-component id="headerstyle"> </header-component>
-<!--CONTENT START CSN-->	
-	<div class ="csn_content">
-		<h3 id="csn_title"> COMPUTER SEES NATURE </h3>
-		<div class = "">
-			<ul>
-				<li><p class ="text_csn1"> Is an interactive installation that uses machine learning to generate a visualisation of natural phenomena via the human shape.<br> The project explores how computers can be used in creative practice as more than functional tools. <br></p>
-				<p id="txxxt2"> Using photographs of elements found in the nordic forest</p></li>
-				<li class="imgs_elements"> 	<img src="CSN/bark.jpg" id="barkimg" alt="bark"> </li>
-				<li class="imgs_elements"> 	<img src="CSN/leaf.jpg" id="leafimg" alt="orange leaf"> </li>
-				<li class="imgs_elements"> 	<img src="CSN/pines.jpg" id="pinesimg" alt="pines"> </li>
-				<li class="imgs_elements"> 	<img src="CSN/lava.jpg" id="lavaimg" alt="lava"> </li>
-				<li><p class = "text_csn2"> The underlying system uses a deep learning method called style transfer to distinguish semantic content from texture in an image. It then renders a new image, by rendering content from a video feed with texture pulled from the first image.</p></li>
-				<li class="gifs_elements"> 
-					<img src="CSN/computerseesnaturvidtree.gif" id="pinesgif" alt="gif pines styletransfer">
-					<img src="CSN/computerseesnaturvidlava.gif" id="lavagif" alt="gif lava styletransfer">
-					<img src="CSN/computerseesnaturvidleaf.gif" id="leafgif" alt="gif leaf styletransfer">
-					<img src="CSN/computerseesnaturvidbark.gif" id="barkgif" alt="gif bark styletransfer"></li>
-				<li><p class = "text_csn2"> The physical installation consists of a tunnel where the viewer is recorded by a kinect infrared video feed, and mirrored on the other side, as the texture of one of the elements, in real time.</p> </li>
-				<li class="ints_pics"> <img src="CSN/tunnelz.svg" id="tunsvg" alt="illustation of tunnel"> <img src="CSN/DSCF8853.JPG" id="pano" alt="panorama of exhibition"></li>
-				<li class="text_csn3">The creative production consisted of developing, designing, and implementing the installation. Underlying system for visualisation is an OpenFrameworks implementation of Logan Engstrom's Fast Style Transfer in TensorFlow. <br>
-			The installation was exhibited in collaboration with 
-			<a href="http://www.catch.dk" target="_blank">CATCH (Center for Art + Tech) </a>, for Click festival, and showcased from May 20th to 21st, 2017, in Kulturværftet, Helsingør (pictured). 
-			<li class="text_csn3"> <br> Also exhibited at: </li>
-			<li class="csn_ex text_csn3"> Opening of Danish Center for Applied AI, 
-			<a href ="http://alexandra.dk" target="_blank"> the Alexandra Institute </a>   27 /10, 2017 </li>
-			<li class="csn_ex text_csn3"> Culture Night, 
-			<a href="http://intermedia.itu.dk/" target="_blank"> IntermediaLab, ITU, </a> 13/10, 2017 </li>
-			</li>
-			<li> <img src="CSN/oversikt.jpg" id="tunbild" alt="oversight of exhibition space"> </li>
- 				<div class="text_csn3">
-					<li class="end_text csn_ex"> 
-					Convolutional neural networks were trained on the Abacus supercomputer via <a href="https://abacus.deic.dk" target="_blank"> DeIC</a> grant as a pilot project for ITU, "Computational Creativity and Optimizing for Aesthetics" </li>
-					<li class="end_text csn_ex"> <a href="https://github.com/olekristensen/ofFasterStyle" target="_blank"> The project can be found as a Tensorflow add-on for openFrameworks, courtesy of Ole Kristensen, frame rate about 9 fps on a Nvidia GeForceGTX 1080 (instructions on Github)</a>  </li>
-					<li class="end_text csn_ex">The tunnel structure drawn in collaboration with Margrete Bjone Engelien, architect. </li> 
-					<li class="end_text csn_ex"> Special thanks to: <a href="http://ole.kristensen.name" target="_blank"> Ole Kristensen,</a>for everything & Sarah McGillion for modelling. </li>
-				</div>
-			</ul>
-		</div>
-	</div>
-<footer-component> </footer-component>
+
+<header-component id="headerstyle"></header-component>
+
+<div class="csn_content">
+    
+    <!-- Title -->
+    <h3 id="csn_title">COMPUTER SEES NATURE</h3>
+    
+    <!-- Introduction -->
+    <div class="csn-intro">
+        <p>An interactive installation that uses machine learning to generate a visualisation of natural phenomena via the human shape. The project explores how computers can be used in creative practice as more than functional tools.</p>
+        <p id="txxxt2">Using photographs of elements found in the nordic forest</p>
+    </div>
+    
+    <!-- Small Nature Elements Row -->
+    <div class="elements-small-row">
+        <img src="CSN/bark.jpg" alt="bark texture">
+        <img src="CSN/leaf.jpg" alt="orange leaf">
+        <img src="CSN/pines.jpg" alt="pines">
+        <img src="CSN/lava.jpg" alt="lava">
+    </div>
+    
+    <!-- Technical Explanation -->
+    <div class="csn-text">
+        <p>The underlying system uses a deep learning method called style transfer to distinguish semantic content from texture in an image. Semantic content is the subject—what gives the picture meaning: the scenery, the objects, the people. Style is the texture: patterns, colors, shapes. The system takes content from a live video feed and applies texture from these nature photographs, rendering a new image in real time.</p>
+    </div>
+    
+    <!-- Style Transfer Results GIFs -->
+    <div class="gifs-row">
+        <img src="CSN/computerseesnaturvidbark.gif" alt="bark style transfer">
+        <img src="CSN/computerseesnaturvidleaf.gif" alt="leaf style transfer">
+        <img src="CSN/computerseesnaturvidtree.gif" alt="pine style transfer">
+        <img src="CSN/computerseesnaturvidlava.gif" alt="lava style transfer">
+    </div>
+    
+    <!-- Installation Description -->
+    <div class="csn-text">
+        <p>The physical installation consists of a tunnel where the viewer is recorded by a kinect infrared video feed, and mirrored on the other side, as the texture of one of the elements, in real time.</p>
+    </div>
+    
+    <!-- Installation Visuals -->
+    <div class="installation-layout">
+        <img src="CSN/tunnelz.svg" id="tunsvg" alt="illustration of tunnel structure">
+        <img src="CSN/DSCF8853.JPG" alt="panorama of exhibition space">
+    </div>
+    
+    <!-- Exhibition Overview -->
+    <img src="CSN/oversikt.jpg" class="full-width-img" alt="overhead view of exhibition space">
+    
+    <!-- Exhibition Information -->
+    <div class="exhibitions-list">
+        <p>The creative production consisted of developing, designing, and implementing the installation. Underlying system for visualisation is an OpenFrameworks implementation of Logan Engstrom's Fast Style Transfer in TensorFlow.</p>
+        
+        <p style="margin-top: 30px;">The installation was exhibited in collaboration with <a href="http://www.catch.dk" target="_blank">CATCH (Center for Art + Tech)</a>, for Click festival, and showcased from May 20th to 21st, 2017, in Kulturværftet, Helsingør.</p>
+        
+        <h4>Also exhibited at:</h4>
+        
+        <div class="exhibition-item">
+            <p>Opening of Danish Center for Applied AI, <a href="http://alexandra.dk" target="_blank">the Alexandra Institute</a> – October 27, 2017</p>
+        </div>
+        
+        <div class="exhibition-item">
+            <p>Culture Night, <a href="http://intermedia.itu.dk/" target="_blank">IntermediaLab, ITU</a> – October 13, 2017</p>
+        </div>
+    </div>
+    
+    <!-- Credits & Technical Details -->
+    <div class="credits">
+        <p>Convolutional neural networks were trained on the Abacus supercomputer via <a href="https://abacus.deic.dk" target="_blank">DeIC</a> grant as a pilot project for ITU, "Computational Creativity and Optimizing for Aesthetics"</p>
+        
+        <p><a href="https://github.com/olekristensen/ofFasterStyle" target="_blank">The project can be found as a Tensorflow add-on for openFrameworks, courtesy of Ole Kristensen</a>, frame rate about 9 fps on a Nvidia GeForceGTX 1080</p>
+        
+        <p>The tunnel structure drawn in collaboration with Margrete Bjone Engelien, architect.</p>
+        
+        <p>Special thanks to: <a href="http://ole.kristensen.name" target="_blank">Ole Kristensen</a> for everything & Sarah McGillion for modelling.</p>
+    </div>
+
+</div>
+
+<footer-component></footer-component>
+
 </body>
+</html>
